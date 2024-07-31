@@ -1,0 +1,83 @@
+.app_page {
+  height: calc(100vh - 116px);
+  /* background-image: url('/images/app_bg.svg'); */
+  transition: background-size 0.3s ease-in-out;
+  background-position: center;
+}
+
+.text_animation {
+  /* margin: 0;
+    -webkit-transition: font-size .5s ease;
+    -moz-transition: font-size .5s ease;
+    -o-transition: font-size .5s ease; */
+  transition: font-size 0.5s, max-width 0.5s ease;
+  /* transition: max-width 5s ease; */
+}
+
+/* .app_page {
+    height: calc(100vh - 116px);
+    transition: background-image 0.3s ease-in-out;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.app_page .default-background {
+    background-image: url('/images/app_bg.svg');
+}
+
+.app_page .scrolled-background {
+    background-image: url('/images/app_bg.svg');
+} */
+
+.tilt-effect {
+  transition: transform 0.1s ease-out;
+}
+
+.tilted {
+  transform: perspective(1000px);
+}
+
+.app_page_ {
+  position: relative;
+  margin: 0;
+  height: 200vh;
+  /* Make sure the height is 100vh */
+  overflow: hidden;
+  /* Prevent scrolling */
+  position: relative;
+  /* background-color: #DF1780; */
+  background-position: center center;
+}
+
+.outer-div {}
+
+.custom_h {
+  /* height: 115vh; */
+}
+
+#image {
+  width: 100%;
+  /* height: calc(100vh - 115px); */
+  min-height: 600px;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-size: 150% auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("/images/app_bg.webp");
+  transition: background-size 0.5s, transform 0.5s;
+  margin-top: 115px;
+}
+
+h1 {
+  /* color: white; */
+
+  text-align: center;
+  margin: auto;
+
+  max-width: 1000px;
+  transition: font-size 0.5s, transform 0.5s;
+}

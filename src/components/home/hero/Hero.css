@@ -1,0 +1,165 @@
+
+.dashed-line {
+  position: relative;
+}
+
+.dashed-line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-bottom: 3px dashed black;
+  overflow: hidden;
+}
+
+.dashed-line:hover::before {
+  animation: dash-expand 1s forwards;
+}
+
+.dashed-line:not(:hover)::before {
+  animation: dash-contract 1s forwards;
+}
+
+@keyframes dash-expand {
+  0% {
+    width: 0;
+    /* Start with no width */
+  }
+
+  100% {
+    width: 100%;
+    /* End with full width */
+  }
+}
+
+@keyframes dash-contract {
+  0% {
+    width: 100%;
+    /* Start with full width */
+  }
+
+  100% {
+    width: 0;
+    /* End with no width */
+  }
+}
+
+.dashed-line .img {
+  transition: width 0.5s;
+}
+
+.dashed-line2 {
+  transition: margin 0.5s;
+}
+
+.dashed-line2 .img {
+  transition: width 0.5s;
+}
+
+.dashed-line:hover .img {
+  width: 120px;
+  object-fit: cover;
+}
+
+.dashed-line2:hover {
+  margin-left: 20px;
+  transition: margin 0.5s;
+}
+
+.dashed-line2:hover .img {
+  width: 120px;
+  object-fit: cover;
+  transition: width 0.5s;
+}
+
+@media screen and (max-width: 960px) {
+  .dashed-line:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-bottom: none;
+    /* Same as parent border */
+    animation: dash 1s forwards;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .dashed-line:hover .img {
+    width: 90px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hero {
+    background-position: center;
+  }
+
+  .dashed-line:hover .img {
+    width: 41px;
+  }
+}
+
+.underline_ {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+}
+
+.underline_::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  /* Reduced height for a thinner line */
+  bottom: -3px;
+  /* Adjusted position to better align with text */
+  left: 0;
+  background-color: transparent;
+  border-bottom: 3px dashed black;
+  /* Dashed border */
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.8s ease-out;
+}
+
+.underline_:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+.underline_button {
+  position: relative;
+  /* display: inline-block; */
+  cursor: pointer;
+  border: none;
+}
+
+.underline_button::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  /* Reduced height for a thinner line */
+  bottom: -3px;
+  /* Adjusted position to better align with text */
+  left: 0;
+  background-color: transparent;
+  border-bottom: 3px dashed black;
+  /* Dashed border */
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.8s ease-out;
+}
+
+.underline_button:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

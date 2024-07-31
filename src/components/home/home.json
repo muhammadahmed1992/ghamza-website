@@ -1,0 +1,92 @@
+{
+  "ENG": {
+    "HERO": {
+      "Shows": "Shows",
+      "Films": "Films",
+      "Documentaries": "Documentaries",
+      "Music": "Music",
+      "RECENT_PROJECTS": "RECENT PROJECTS"
+    },
+
+    "PURCHASE": {
+      "SHOP": "SHOP",
+      "Areeka_show": "Areeka show: ",
+      "Hand_Gloves": "Hand Gloves ",
+      "Collectors_Edition": "Collector’s Edition ",
+      "PURCHASE": "PURCHASE"
+    },
+
+    "PODCAST": {
+      "PODCAST": "PODCAST",
+      "WATCH_NOW": "WATCH NOW",
+      "NEWEST": "NEWEST   ",
+      "EPISODE": "EPISODE  ",
+      "OF_AREEKA": " OF AREEKA ",
+      "THE": "THE"
+    },
+
+    "KID": {
+      "WATCH_NOW": "Watch Now",
+      "THE_ARABIAN_KID": "The arabian kid"
+    },
+
+    "SHOP": {
+      "SHOP": "SHOP",
+      "name": "The arabian kid ",
+      "Tee": "tee ",
+      "description": "All profits from this product will be donated to a charitable organization accredited by the State of Kuwait to be delivered to our brothers in occupied Palestine.",
+      "watchNow": "WATCH NOW"
+    },
+
+    "MUSIC": {
+      "WATCH_THE_ARABIAN": "WATCH THE ARABIAN",
+      "KID_ON_YOUTUBE": "KID ON YOUTUBE",
+      "WATCH_NOW": "WATCH NOW",
+      "MUSIC": "MUSIC"
+    }
+  },
+
+  "AR": {
+    "HERO": {
+      "RECENT_PROJECTS": "مشاريع عملاقة",
+      "WHITE_ARROW_ALT_TEXT": "عرض المزيد من التفاصيل"
+    },
+
+    "PURCHASE": {
+      "SHOP": "متجر",
+      "Areeka_show": "عرض آريكا: ",
+      "Hand_Gloves": "القفازات اليدوية",
+      "Collectors_Edition": "الطبعة الخاصة بالمجمعين",
+      "PURCHASE": "شراء"
+    },
+
+    "PODCAST": {
+      "PODCAST": "بودكاست",
+      "WATCH_NOW": "شاهد الآن",
+      "NEWEST": "الأحدث   ",
+      "EPISODE": "الحلقة  ",
+      "OF_AREEKA": " من آريكا ",
+      "THE": "ال"
+    },
+
+    "KID": {
+      "WATCH_NOW": "شاهد الآن",
+      "THE_ARABIAN_KID": "الطفل العربي"
+    },
+
+    "SHOP": {
+      "SHOP": "المتجر",
+      "name": "الطفل العربي",
+      "Tee": "تي شيرت",
+      "description": "سيتم التبرع بجميع الأرباح من هذا المنتج إلى منظمة خيرية معتمدة من قبل دولة الكويت لتسليمها لإخوتنا في فلسطين المحتلة.",
+      "watchNow": "شاهد الآن"
+    },
+
+    "MUSIC": {
+      "WATCH_THE_ARABIAN": "مشاهدة العربية",
+      "KID_ON_YOUTUBE": "طفل على يوتيوب",
+      "WATCH_NOW": "شاهد الآن",
+      "MUSIC": "موسيقى"
+    }
+  }
+}

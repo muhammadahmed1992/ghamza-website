@@ -1,0 +1,12 @@
+span {
+  cursor: pointer;
+  transition: font-weight 0.4s ease-in-out;
+}
+
+.bold {
+  font-weight: 900; /* Adjust as per your font-weight requirement */
+}
+
+.normal {
+  font-weight: 600; /* Adjust as per your font-weight requirement */
+}

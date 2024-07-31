@@ -1,0 +1,37 @@
+
+.container {
+    margin: 20px;
+  }
+  
+  .bottom-reveal-container {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+  }
+  
+  .bottom-reveal-container.open {
+    max-height: 500px; /* Adjust as needed */
+  }
+  
+  .bottom-reveal-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .bottom-reveal-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .bottom-reveal-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .bottom-reveal-container.open .bottom-reveal-item {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.3s; /* Delay each item animation */
+  }
+  

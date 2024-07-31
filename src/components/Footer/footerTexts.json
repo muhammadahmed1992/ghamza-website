@@ -1,0 +1,52 @@
+{
+  "ENG": {
+    "links": {
+      "jobs": "Jobs",
+      "shop": "Shop",
+      "app": "App",
+      "secret": "Secret",
+      "AboutUS": "About US",
+      "termsOfUse": "Terms of Use",
+      "privacyPolicy": "Privacy Policy",
+      "letsTalk": "Lets Talk"
+    },
+    "socials": {
+      "socialsText": "Ghmza on the socials",
+      "youtube": "YouTube",
+      "instagram": "Instagram",
+      "twitter": "Twitter",
+      "reddit": "Reddit",
+      "discord": "Discord",
+      "tiktok": "Tiktok"
+    },
+    "moreGhamza": "More Ghmzaaa!!",
+    "getEmails": "Get our emails. Letters from Ghmza, new Music, podcasts, merch, and more.",
+    "emailPlaceholder": "Email",
+    "signUp": "Sign Me Up!!"
+  },
+  "AR": {
+    "links": {
+      "jobs": "الوظائف",
+      "shop": "التسوق",
+      "app": "التطبيق",
+      "secret": "سري",
+      "AboutUS": "معلومات عنا",
+      "termsOfUse": "شروط الإستخدام ",
+      "privacyPolicy": "سياسة الخصوصية",
+      "letsTalk": "دعونا نتحدث"
+    },
+    "socials": {
+      "socialsText": "تابع حسابات غمزة",
+      "youtube": "يوتيوب",
+      "instagram": "انستغرام",
+      "twitter": "تويتر",
+      "reddit": "ريديت",
+      "discord": "ديسكورد",
+      "tiktok": "تيك توك"
+    },
+    "moreGhamza": "كن على تواصل",
+    "getEmails": "نقوم بإرسال اشياء جميلة، اشترك معنا بالقائمة البريدية",
+    "emailPlaceholder": "البريد الإلكتروني",
+    "signUp": "اشترك الآن"
+  }
+}

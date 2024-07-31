@@ -1,0 +1,35 @@
+{
+    "menu": {
+      "ENG": "Menu",
+      "AR": "القائمة"
+    },
+    "about": {
+      "ENG": "Menu / Ghmza",
+      "AR": "القائمة / غمزة"
+    },
+    "films": {
+      "ENG": "Menu / Films",
+      "AR": "القائمة / أفلام"
+    },
+    "shows": {
+      "ENG": "Menu / Shows",
+      "AR": "القائمة / عروض"
+    },
+    "docs": {
+      "ENG": "Menu / Docus",
+      "AR": "القائمة / وثائقيات"
+    },
+    "music": {
+      "ENG": "Menu / Music",
+      "AR": "القائمة / موسيقى"
+    },
+    "liveshows": {
+      "ENG": "Menu / Real Time",
+      "AR": "القائمة / حي"
+    },
+    "contact": {
+      "ENG": "Menu / Contact",
+      "AR": "القائمة / اتصل"
+    }
+  }
+  

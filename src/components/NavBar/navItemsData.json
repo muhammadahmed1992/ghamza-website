@@ -1,0 +1,32 @@
+[
+  {
+    "href": "/categories/films",
+    "text": { "ENG": "Films", "AR": "أفلام" },
+    "subText": { "ENG": "Movies", "AR": "أفلام" }
+  },
+  {
+    "href": "/categories/shows",
+    "text": { "ENG": "Shows", "AR": "برامج" },
+    "subText": { "ENG": "Series", "AR": "سلسلة" }
+  },
+  {
+    "href": "/categories/docs",
+    "text": { "ENG": "Docus", "AR": "وثائقيات" },
+    "subText": { "ENG": "Documentations", "AR": "التوثيقات" }
+  },
+  {
+    "href": "/categories/music",
+    "text": { "ENG": "Music", "AR": "موسيقى" },
+    "subText": { "ENG": "Tunes", "AR": "الألحان" }
+  },
+  {
+    "href": "/categories/liveshows",
+    "text": { "ENG": "Live", "AR": "فعاليات" },
+    "subText": { "ENG": "Real time", "AR": "زمن حقيقي" }
+  },
+  {
+    "href": "https://75c1a3-66.myshopify.com/",
+    "text": { "ENG": "Shop", "AR": "تسوق" },
+    "subText": { "ENG": "the goods", "AR": "البضائع" }
+  }
+]

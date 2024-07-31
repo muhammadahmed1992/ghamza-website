@@ -1,0 +1,130 @@
+.dashed-animation:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-top: 1px dashed white;
+  border-bottom: 1px dashed white !important;
+  animation: dashBorder 0.6s forwards;
+  overflow: hidden;
+}
+@keyframes dashBorder {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.dashed-animation-backward:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  border-top: 1px dashed white;
+  border-bottom: 1px dashed white !important;
+  animation: dashBorder 0.6s forwards;
+  overflow: hidden;
+}
+@keyframes dashBorder {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.hide-search-clear-button::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+
+input[type="search"] {
+  outline: none !important; /* Remove outline */
+  -webkit-appearance: none !important; /* Remove default styling on iOS */
+  border-radius: 0; /* Remove rounded corners on iOS */
+  /* padding: 5px; Add padding to avoid visual artifacts */
+}
+
+/* Animation Left on Language change start */
+
+/* Initial slide-in from left */
+.slide-in-left {
+  animation: slide-in-left 0.5s ease both;
+  will-change: transform;
+}
+
+@keyframes slide-in-left {
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+
+/* Slide-out to the left with a delay */
+.slide-out-left {
+  animation: slide-out-left 0.5s ease both;
+  will-change: transform;
+}
+
+@keyframes slide-out-left {
+  100% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/* Animation Left on Language change end */
+
+/* Animation Right on Language change start */
+
+/* Initial slide-in from right */
+/* .slide-in-right {
+  animation: slide-in-right 1.5s ease both;
+  will-change: transform;
+}
+
+@keyframes slide-in-right {
+  100% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+} */
+
+/* Slide-out to the left with a delay */
+/* .slide-out-right {
+  animation: slide-out-right 1.5s ease both 2s;
+  will-change: transform;
+}
+
+@keyframes slide-out-right {
+  100% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+} */
+
+/* Animation Right on Language change end */

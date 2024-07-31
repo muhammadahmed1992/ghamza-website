@@ -1,0 +1,50 @@
+#playBtn {
+    stroke: white;
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+    fill: none;
+  }
+  
+  #playBtn:hover {
+    animation: 2.5s linear play forwards infinite;
+    
+  }
+  
+  @keyframes play {
+    0% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 170;
+      stroke: #DF1780;
+    }
+    50% {
+      stroke-dashoffset: -100; /* Move the stroke anti-clockwise */
+      stroke-dasharray: 100;
+      stroke: #DF1780;
+
+    }
+   
+    100% {
+      stroke-dashoffset: -300; /* Move the stroke anti-clockwise */
+      stroke-dasharray: 170;
+      stroke: white;
+      
+    }
+  }
+
+
+  .image {
+    display: block;
+    transition: 1s
+  
+  }
+  
+  .loading {
+    filter: blur(10px);
+    clip-path: inset(0);
+  }
+  
+  .loaded {
+    filter: blur(0px);
+    transition: filter 0.5s linear;
+  }
+ 

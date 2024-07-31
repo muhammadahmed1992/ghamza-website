@@ -1,0 +1,88 @@
+{
+  "ENG": {
+    "title": "Privacy Policy",
+    "share": "Share",
+    "introduction": {
+      "title": "Introduction",
+      "content": "Welcome to Ghmza! Your privacy is important to us. Ghmza, located at ghmza.com, is committed to protecting your privacy when you visit our website. This Privacy Policy explains how we collect, use, and protect the information we obtain from you online."
+    },
+    "informationWeCollect": {
+      "title": "1. Information We Collect",
+      "content": [
+        "Newsletter Sign-Up: We collect your email address when you sign up for our newsletter. This information is used to send you newsletters and updates from Ghmza.",
+        "Cookies and Tracking Technologies: We use cookies and similar tracking technologies to track the activity on our website and hold certain information. Cookies are files with a small amount of data which may include an anonymous unique identifier. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our website."
+      ]
+    },
+    "useOfInformation": {
+      "title": "2. Use of Information",
+      "content": "The information we collect is used solely for the purpose of sending you newsletters and improving your experience on our website. We do not share or sell your information to third parties for marketing or advertising purposes."
+    },
+    "storageOfInformation": {
+      "title": "3. Storage of Information",
+      "content": "Your email address is stored on AWS servers, which are secured with standard security measures. We retain your email address for as long as you are subscribed to our newsletter. If you decide to unsubscribe, your email address will be removed from our database."
+    },
+    "security": {
+      "title": "4. Security",
+      "content": "We take the security of your data seriously. Although no method of transmission over the Internet or electronic storage is 100% secure, we use commercially acceptable means to protect your personal information."
+    },
+    "yourChoices": {
+      "title": "5. Your Choices",
+      "content": [
+        "Cookies: You have the option to accept or refuse cookies. Most web browsers automatically accept cookies, but you can usually modify your browser setting to decline cookies if you prefer.",
+        "Newsletter: You can unsubscribe from our newsletter at any time by clicking on the unsubscribe link provided at the bottom of each email."
+      ]
+    },
+    "changesToPrivacyPolicy": {
+      "title": "6. Changes to This Privacy Policy",
+      "content": "We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. We will update the \"effective date\" at the top of this Privacy Policy."
+    },
+    "contactUs": {
+      "title": "7. Contact Us",
+      "content": "If you have any questions about this Privacy Policy, please contact us at hi@ghmza.com."
+    },
+    "effectiveDate": "Effective Date: 15 April, 2024"
+  },
+  "AR": {
+    "title": "سياسة الخصوصية",
+    "share": "مشاركة",
+    "introduction": {
+      "title": "المقدمة",
+      "content": "مرحبًا بك في غمزة! خصوصيتك مهمة بالنسبة لنا. تلتزم غمزة، الموجودة على ghmza.com، بحماية خصوصيتك عند زيارتك لموقعنا على الويب. توضح سياسة الخصوصية هذه كيفية جمعنا واستخدامنا وحماية المعلومات التي نحصل عليها منك عبر الإنترنت."
+    },
+    "informationWeCollect": {
+      "title": "1. المعلومات التي نجمعها",
+      "content": [
+        "التسجيل في النشرة الإخبارية: نجمع عنوان بريدك الإلكتروني عندما تسجل في نشرتنا الإخبارية. يتم استخدام هذه المعلومات لإرسال النشرات الإخبارية والتحديثات من غمزة.",
+        "ملفات تعريف الارتباط وتقنيات التتبع: نستخدم ملفات تعريف الارتباط وتقنيات التتبع المماثلة لتتبع النشاط على موقعنا والاحتفاظ ببعض المعلومات. تعتبر ملفات تعريف الارتباط ملفات تحتوي على كمية صغيرة من البيانات قد تتضمن معرف فريد مجهول. يمكنك تعليم متصفحك برفض جميع ملفات تعريف الارتباط أو تحديد عندما يتم إرسال ملف تعريف ارتباط. ومع ذلك، إذا لم تقبل ملفات تعريف الارتباط، فقد لا تتمكن من استخدام بعض أجزاء موقعنا على الويب."
+      ]
+    },
+    "useOfInformation": {
+      "title": "2. استخدام المعلومات",
+      "content": "تستخدم المعلومات التي نجمعها فقط لغرض إرسال النشرات الإخبارية وتحسين تجربتك على موقعنا على الويب. لا نشارك أو نبيع معلوماتك لأطراف ثالثة لأغراض التسويق أو الإعلان."
+    },
+    "storageOfInformation": {
+      "title": "3. تخزين المعلومات",
+      "content": "يتم تخزين عنوان بريدك الإلكتروني على خوادم AWS، التي تتمتع بتدابير أمان قياسية. نحتفظ بعنوان بريدك الإلكتروني طالما كنت مشتركًا في نشرتنا الإخبارية. إذا قررت إلغاء الاشتراك، سيتم إزالة عنوان بريدك الإلكتروني من قاعدة البيانات لدينا."
+    },
+    "security": {
+      "title": "4. الأمان",
+      "content": "نحن نأخذ أمان بياناتك على محمل الجد. على الرغم من أنه لا يوجد أي طريقة لنقل عبر الإنترنت أو تخزين إلكتروني 100٪ آمن، إلا أننا نستخدم وسائل مقبولة تجاريا لحماية معلوماتك الشخصية."
+    },
+    "yourChoices": {
+      "title": "5. خياراتك",
+      "content": [
+        "ملفات تعريف الارتباط: لديك خيار قبول أو رفض ملفات تعريف الارتباط. يقبل معظم متصفحات الويب تلقائيًا ملفات تعريف الارتباط، ولكن يمكنك عادةً تعديل إعداد متصفحك لرفض ملفات تعريف الارتباط إذا كنت تفضل ذلك.",
+        "النشرة الإخبارية: يمكنك إلغاء الاشتراك في النشرة الإخبارية الخاصة بنا في أي وقت عن طريق النقر على رابط إلغاء الاشتراك المقدم في أسفل كل بريد إلكتروني."
+      ]
+    },
+    "changesToPrivacyPolicy": {
+      "title": "6. التغييرات على سياسة الخصوصية",
+      "content": "قد نقوم بتحديث سياسة الخصوصية الخاصة بنا من وقت لآخر. سنقوم بإخطارك بأي تغييرات من خلال نشر سياسة الخصوصية الجديدة على هذه الصفحة. سنقوم بتحديث \"تاريخ السريان\" في أعلى سياسة الخصوصية هذه."
+    },
+    "contactUs": {
+      "title": "7. تواصل معنا",
+      "content": "إذا كان لديك أي أسئلة حول سياسة الخصوصية هذه، يرجى الاتصال بنا على"
+    },
+    "effectiveDate": "تاريخ النفاذ: 15 أبريل 2024"
+  }
+}
