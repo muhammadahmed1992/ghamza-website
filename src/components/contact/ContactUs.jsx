@@ -438,7 +438,7 @@ const ContactUs = () => {
                 <label
                   className={`pointer-events-none absolute ${
                     language === "ENG" ? "left-0" : "right-0"
-                  } -top-4 text-[14px]`}
+                  } top-[5px] text-sm transform transition-transform duration-300 ease-in-out group-focus-within:-translate-y-5 group-focus-within:text-gray group-focus-within:text-base`}
                   style={{ fontSize: "12px", textTransform: "uppercase" }}
                 >
                   {language === "ENG" ? "Topics*" : "المواضيع*"}
