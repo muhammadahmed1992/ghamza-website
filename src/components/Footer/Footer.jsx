@@ -131,7 +131,7 @@ const Footer = () => {
                       {texts?.links?.shop}
                     </a>
                   </li>
-                  <li className="mb-[6px] md:mb-[8px]">
+                  <li className="hidden md:block mb-[6px] md:mb-[8px]">
                     <a href="/newApp" className="hover:underline">
                       {texts?.links?.app}
                     </a>
