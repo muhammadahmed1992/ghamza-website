@@ -77,9 +77,9 @@ const NewApp = () => {
       <SkrollrComponent>
         <div
           id="image"
-          data-0="background-size: 250% auto; transform: scale(1);"
-          data-500="background-size: 100% auto; transform: scale(0.8);"
-          className={`z-[40] app_page_ ${
+          data-0="background-size: 250% auto; transform: scale(1.5);"
+          data-500="background-size: 100% auto; transform: scale(1);"
+          className={`z-[40] w-[150%] app_page_ ${
             selectedLanguage === "ENG" ? "font-custom1" : "font-custom3"
           }`}
           style={{ height: "100vh", overflow: "hidden" }} // Ensure height is 100vh and no overflow
@@ -91,7 +91,7 @@ const NewApp = () => {
             data-500=" transform: scale(0.8);"
             className={` ${
               isScrolling ? "transition-all text-white " : " text-black "
-            } transition-all cursor-default select-none   flex h-screen text_animation text-center leading-[50px] md:leading-[100px] xl:leading-[142px] lg:tracking-[-7.73px] md:max-w-[600px] xl:max-w-[880px] text-[50px] md:text-[100px] xl:text-[160px] font-[860] justify-center items-center mt-[-20px]`}
+            } transition-all cursor-default select-none flex h-screen text_animation text-center leading-[50px] md:leading-[100px] xl:leading-[142px] lg:tracking-[-7.73px] md:max-w-[600px] xl:max-w-[880px] text-[50px] md:text-[100px] xl:text-[160px] font-[860] justify-center items-center mt-[-20px]`}
           >
             WE CAN&apos;T TELL YOU YET
           </h1>
