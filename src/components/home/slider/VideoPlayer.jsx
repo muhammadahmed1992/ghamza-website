@@ -267,12 +267,12 @@ const HeroSlider = ({ mediaData }) => {
             <img
               src="/images/aeroplane.gif"
               alt="Aeroplane"
-              className="absolute inset-0 m-auto object-cover desktop-gif"
+              className="absolute inset-0 min-w-full m-auto object-cover desktop-gif"
             />
             <img
               src="/images/aeroplane-m.gif"
               alt="Mobile Aeroplane"
-              className="absolute inset-0 m-auto object-cover mobile-gif"
+              className="absolute inset-0 min-w-full m-auto object-cover mobile-gif"
             />
           </>
         )}
