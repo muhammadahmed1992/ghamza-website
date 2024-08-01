@@ -158,6 +158,7 @@ const NavBar = () => {
       "/categories/music": "music",
       "/categories/liveshows": "liveshows",
       "/contact": "contact",
+      "/job": "job"
     };
 
     const validCategories = ["films", "shows", "docs", "music", "liveshows"];

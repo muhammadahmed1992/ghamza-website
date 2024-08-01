@@ -10,6 +10,7 @@ import showsReducer from "./showsSlice";
 import musicReducer from "./musicSlice";
 import liveReducer from "./liveShowsSlice";
 import contactReducer from "./contactSlice";
+import joinUsReducer from "./joinUsSlice";
 
 export const store = configureStore({
   reducer: {
@@ -23,5 +24,6 @@ export const store = configureStore({
     music: musicReducer,
     liveShows: liveReducer,
     contact: contactReducer,
+    joinUs: joinUsReducer,
   },
 });

@@ -256,6 +256,7 @@ const HeroSlider = ({ mediaData }) => {
                   backgroundColor:
                     index === currentMediaIndex ? "black" : "white",
                   cursor: "pointer",
+                  mixBlendMode: "difference",
                 }}
                 onClick={() => setCurrentMediaIndex(index)}
               />

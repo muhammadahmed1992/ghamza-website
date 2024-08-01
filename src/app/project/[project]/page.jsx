@@ -16,6 +16,7 @@ import NavBarDetails from "@/components/NavBarDetails/NavBarDetails";
 import { useRouter } from "next/navigation";
 
 export const DropdownNew = (props) => {
+  console.log(props);
   const selectedLanguage = useSelector(
     (state) => state.language.selectedLanguage
   );

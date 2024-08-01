@@ -6,6 +6,7 @@ import utils from "@/util/utils";
 import { usePathname } from "next/navigation";
 import { setContactInfo } from "@/redux/contactSlice";
 import Link from "next/link";
+import { setJoinUsInfo } from "@/redux/joinUsSlice";
 
 const Footer = () => {
   const pathname = usePathname();
@@ -66,11 +67,18 @@ const Footer = () => {
   const dispatch = useDispatch();
 
   let titleEng = "LETS CATCH UP AND TALK ABOUT YOU!";
+  let joinUsTitleEng = "ARE YOU THE MISSING PIECE💼 WE ARE LOOKING FOR!!";
   let titleAr = "دعونا اللحاق والتحدث عنك!";
+  let joinUsTitleAr = "هل أنت القطعة المفقودة💼 التي نبحث عنها!!"
 
   const handleLetsTalkClick = (event) => {
     event.preventDefault();
-    dispatch(setContactInfo({ titleEng, titleAr }));
+    dispatch(setContactInfo({ titleEng, titleAr}));
+  };
+
+  const handleJoinUsClick = (event) => {
+    event.preventDefault();
+    dispatch(setJoinUsInfo({ joinUsTitleEng, joinUsTitleAr}));
   };
 
   const [email, setEmail] = useState("");
@@ -113,15 +121,12 @@ const Footer = () => {
             <div className="flex justify-between gap-4 col-span-2 lg:col-span-1">
               <div className="uppercase text-white text-[11.34px] md:text-[13.95px] leading-4 font-bold">
                 <ul className="font-normal md:font-bold">
-                  <li className="mb-[6px] md:mb-[8px]">
-                    <a
-                      href="https://www.linkedin.com/company/ghmza/jobs/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:underline tracking-[-0.08px]"
-                    >
+                  <li className="mb-[6px] md:mb-[8px]" 
+                    onClick={handleJoinUsClick}
+                  >  
+                    <Link href="/job" className="hover:underline">
                       {texts?.links?.jobs}
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-[6px] md:mb-[8px]">
                     <a

@@ -1,57 +1,35 @@
 "use client";
 import React, { useEffect, useState, useRef } from "react";
 import "./CursorAnimation.css";
-import { TweenMax } from "gsap/gsap-core";
+import { gsap } from "gsap";
 import { useSelector } from "react-redux";
 
 const CursorAnimation = () => {
   const bigBall = useRef(null);
   const smallBall = useRef(null);
   const tooltip = useRef(null);
-  const mouseX = useRef(0);
-  const mouseY = useRef(0);
-
-  const selectedLanguage = useSelector(
-    (state) => state.language.selectedLanguage
-  );
-
-
   const [tooltipText, setTooltipText] = useState("");
   const [isTooltipVisible, setIsTooltipVisible] = useState(false);
+  const selectedLanguage = useSelector(state => state.language.selectedLanguage);
 
   const isMobile = () =>
     typeof navigator !== "undefined" &&
-    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-      navigator.userAgent
-    );
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
   useEffect(() => {
-    if (isMobile()) {
-      return;
-    }
+    if (isMobile()) return;
 
     const handleMouseMove = (e) => {
-      if (!isMobile()) {
-        mouseX.current = e.clientX;
-        mouseY.current = e.clientY;
+      const mouseX = e.clientX;
+      const mouseY = e.clientY;
 
-        if (bigBall.current && smallBall.current) {
-          TweenMax.to(bigBall.current, 0.4, {
-            x: e.pageX - 15,
-            y: e.pageY - 15,
-          });
-          TweenMax.to(smallBall.current, 0.1, {
-            x: e.pageX - 15,
-            y: e.pageY - 15,
-          });
-        }
+      if (bigBall.current && smallBall.current) {
+        gsap.to(bigBall.current, { duration: 0.4, x: mouseX - 15, y: mouseY - 15 });
+        gsap.to(smallBall.current, { duration: 0.1, x: mouseX - 15, y: mouseY - 15 });
+      }
 
-        if (tooltip.current) {
-          TweenMax.to(tooltip.current, 0.4, {
-            x: e.pageX + 15,
-            y: e.pageY + 15,
-          });
-        }
+      if (tooltip.current) {
+        gsap.to(tooltip.current, { duration: 0.4, x: mouseX + 15, y: mouseY + 15 });
       }
     };
 
@@ -59,30 +37,34 @@ const CursorAnimation = () => {
       if (e.target.tagName === "IMG" && e.target.dataset.tooltip) {
         setTooltipText(e.target.dataset.tooltip);
         setIsTooltipVisible(true);
+        setTimeout(() => {
+          const tooltipEl = tooltip.current;
+          tooltipEl.style.width = `${tooltipEl.scrollWidth}px`;
+          tooltipEl.style.height = `${tooltipEl.scrollHeight}px`;
+        }, 10);
       }
     };
 
     const handleMouseOut = (e) => {
-      if (e.target.tagName !== "IMG") {
+      if (e.target.tagName === "IMG") {
         setIsTooltipVisible(false);
+        const tooltipEl = tooltip.current;
+        tooltipEl.style.width = "0";
+        tooltipEl.style.height = "0";
       }
     };
 
     const handleClick = () => {
       setIsTooltipVisible(false);
-    };
-
-    const updateBallPosition = () => {
-      const cursor = tooltip.current;
-      cursor.style.display = "block";
-      requestAnimationFrame(updateBallPosition);
+      const tooltipEl = tooltip.current;
+      tooltipEl.style.width = "0";
+      tooltipEl.style.height = "0";
     };
 
     document.addEventListener("mousemove", handleMouseMove);
     document.addEventListener("mouseover", handleMouseOver);
     document.addEventListener("mouseout", handleMouseOut);
     document.addEventListener("click", handleClick);
-    updateBallPosition();
 
     return () => {
       document.removeEventListener("mousemove", handleMouseMove);
@@ -93,9 +75,7 @@ const CursorAnimation = () => {
     };
   }, []);
 
-  if (isMobile()) {
-    return null;
-  }
+  if (isMobile()) return null;
 
   return (
     <>
@@ -113,9 +93,9 @@ const CursorAnimation = () => {
       </div>
       <div
         ref={tooltip}
-        className={` ${isTooltipVisible ? "visible tooltip" : ""}`}
+        className={`tooltip ${isTooltipVisible ? "visible" : ""}`}
       >
-        {isTooltipVisible && <span className={selectedLanguage === "ENG" ? 'font-custom1':'font-custom3'}>{tooltipText}</span>}
+        {isTooltipVisible && <span className={`${selectedLanguage === "ENG" ? 'font-custom1':'font-custom3'}`}>{tooltipText}</span>}
       </div>
     </>
   );
